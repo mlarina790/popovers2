@@ -1,13 +1,13 @@
 {
   "extends": "airbnb-base",
-  "import/no-extraneous-dependencies": "off",
   "env": {
     "es6": true,
     "browser": true,
     "jest": true
   },
   "rules": {
-    "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"]
+    "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"],
+    "import/no-extraneous-dependencies": ["error",  {"devDependencies": true}]
   }
-  
+
 }
