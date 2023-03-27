@@ -1,4 +1,5 @@
 import puppetteer from 'puppeteer';
+
 jest.setTimeout(90000); // default puppeteer timeout
 
 describe('tooltip', () => {
@@ -23,5 +24,5 @@ describe('tooltip', () => {
     const button = await page.$('.btn');
     await button.click();
     await page.waitForSelector('.tooltip');
-});
+  });
 });
